@@ -1,0 +1,285 @@
+I, [2022-09-08T11:51:20.431509 #46711]  INFO -- : Migrating to CreateArticles (20220906184635)
+I, [2022-09-08T11:51:20.667177 #46711]  INFO -- : Migrating to CreateComments (20220906202521)
+I, [2022-09-08T11:51:20.854684 #46711]  INFO -- : Migrating to AddStatusToArticles (20220906205059)
+I, [2022-09-08T11:51:20.958967 #46711]  INFO -- : Migrating to AddStatusToComments (20220906205113)
+I, [2022-09-08T11:55:36.505353 #46861]  INFO -- : [fcd33a25-d65e-44c1-98c2-806fa138c8e2] Started GET "/" for 127.0.0.1 at 2022-09-08 11:55:36 -0500
+I, [2022-09-08T11:55:36.507368 #46861]  INFO -- : [fcd33a25-d65e-44c1-98c2-806fa138c8e2] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:55:36.539119 #46861]  INFO -- : [fcd33a25-d65e-44c1-98c2-806fa138c8e2]   Rendered articles/index.html.erb within layouts/application (Duration: 21.4ms | Allocations: 1571)
+I, [2022-09-08T11:55:36.539209 #46861]  INFO -- : [fcd33a25-d65e-44c1-98c2-806fa138c8e2]   Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 1606)
+I, [2022-09-08T11:55:36.539575 #46861]  INFO -- : [fcd33a25-d65e-44c1-98c2-806fa138c8e2] Completed 500 Internal Server Error in 32ms (Allocations: 2511)
+F, [2022-09-08T11:55:36.540399 #46861] FATAL -- : [fcd33a25-d65e-44c1-98c2-806fa138c8e2]   
+[fcd33a25-d65e-44c1-98c2-806fa138c8e2] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[fcd33a25-d65e-44c1-98c2-806fa138c8e2]     1: <h1>Articles</h1>
+[fcd33a25-d65e-44c1-98c2-806fa138c8e2]     2: 
+[fcd33a25-d65e-44c1-98c2-806fa138c8e2]     3: Our blog has <%= Article.public_count %> articles and counting!
+[fcd33a25-d65e-44c1-98c2-806fa138c8e2]     4: 
+[fcd33a25-d65e-44c1-98c2-806fa138c8e2]     5: <ul>
+[fcd33a25-d65e-44c1-98c2-806fa138c8e2]     6:   <% @articles.each do |article| %>
+[fcd33a25-d65e-44c1-98c2-806fa138c8e2]   
+[fcd33a25-d65e-44c1-98c2-806fa138c8e2] app/models/concerns/visible.rb:12:in `public_count'
+[fcd33a25-d65e-44c1-98c2-806fa138c8e2] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:11.985327 #46861]  INFO -- : [73659779-6d99-465d-b905-049eaf53b12a] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:11 -0500
+I, [2022-09-08T11:56:11.986306 #46861]  INFO -- : [73659779-6d99-465d-b905-049eaf53b12a] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:11.990512 #46861]  INFO -- : [73659779-6d99-465d-b905-049eaf53b12a]   Rendered articles/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1256)
+I, [2022-09-08T11:56:11.990707 #46861]  INFO -- : [73659779-6d99-465d-b905-049eaf53b12a]   Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1285)
+I, [2022-09-08T11:56:11.990910 #46861]  INFO -- : [73659779-6d99-465d-b905-049eaf53b12a] Completed 500 Internal Server Error in 5ms (Allocations: 1484)
+F, [2022-09-08T11:56:11.991910 #46861] FATAL -- : [73659779-6d99-465d-b905-049eaf53b12a]   
+[73659779-6d99-465d-b905-049eaf53b12a] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[73659779-6d99-465d-b905-049eaf53b12a]     1: <h1>Articles</h1>
+[73659779-6d99-465d-b905-049eaf53b12a]     2: 
+[73659779-6d99-465d-b905-049eaf53b12a]     3: Our blog has <%= Article.public_count %> articles and counting!
+[73659779-6d99-465d-b905-049eaf53b12a]     4: 
+[73659779-6d99-465d-b905-049eaf53b12a]     5: <ul>
+[73659779-6d99-465d-b905-049eaf53b12a]     6:   <% @articles.each do |article| %>
+[73659779-6d99-465d-b905-049eaf53b12a]   
+[73659779-6d99-465d-b905-049eaf53b12a] app/models/concerns/visible.rb:12:in `public_count'
+[73659779-6d99-465d-b905-049eaf53b12a] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:45.807201 #46908]  INFO -- : [2442c85c-974d-4af5-bdc4-65b6433fb386] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:45 -0500
+I, [2022-09-08T11:56:45.808890 #46908]  INFO -- : [2442c85c-974d-4af5-bdc4-65b6433fb386] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:45.818805 #46908]  INFO -- : [2442c85c-974d-4af5-bdc4-65b6433fb386]   Rendered articles/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1571)
+I, [2022-09-08T11:56:45.818954 #46908]  INFO -- : [2442c85c-974d-4af5-bdc4-65b6433fb386]   Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1606)
+I, [2022-09-08T11:56:45.819160 #46908]  INFO -- : [2442c85c-974d-4af5-bdc4-65b6433fb386] Completed 500 Internal Server Error in 10ms (Allocations: 2512)
+F, [2022-09-08T11:56:45.820065 #46908] FATAL -- : [2442c85c-974d-4af5-bdc4-65b6433fb386]   
+[2442c85c-974d-4af5-bdc4-65b6433fb386] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[2442c85c-974d-4af5-bdc4-65b6433fb386]     1: <h1>Articles</h1>
+[2442c85c-974d-4af5-bdc4-65b6433fb386]     2: 
+[2442c85c-974d-4af5-bdc4-65b6433fb386]     3: Our blog has <%= Article.public_count %> articles and counting!
+[2442c85c-974d-4af5-bdc4-65b6433fb386]     4: 
+[2442c85c-974d-4af5-bdc4-65b6433fb386]     5: <ul>
+[2442c85c-974d-4af5-bdc4-65b6433fb386]     6:   <% @articles.each do |article| %>
+[2442c85c-974d-4af5-bdc4-65b6433fb386]   
+[2442c85c-974d-4af5-bdc4-65b6433fb386] app/models/concerns/visible.rb:12:in `public_count'
+[2442c85c-974d-4af5-bdc4-65b6433fb386] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:46.463076 #46908]  INFO -- : [24ae7f1b-daa6-4934-85ac-9bf82c78ee02] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:46 -0500
+I, [2022-09-08T11:56:46.463750 #46908]  INFO -- : [24ae7f1b-daa6-4934-85ac-9bf82c78ee02] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:46.470371 #46908]  INFO -- : [24ae7f1b-daa6-4934-85ac-9bf82c78ee02]   Rendered articles/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1256)
+I, [2022-09-08T11:56:46.470453 #46908]  INFO -- : [24ae7f1b-daa6-4934-85ac-9bf82c78ee02]   Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1285)
+I, [2022-09-08T11:56:46.470569 #46908]  INFO -- : [24ae7f1b-daa6-4934-85ac-9bf82c78ee02] Completed 500 Internal Server Error in 7ms (Allocations: 1484)
+F, [2022-09-08T11:56:46.471338 #46908] FATAL -- : [24ae7f1b-daa6-4934-85ac-9bf82c78ee02]   
+[24ae7f1b-daa6-4934-85ac-9bf82c78ee02] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[24ae7f1b-daa6-4934-85ac-9bf82c78ee02]     1: <h1>Articles</h1>
+[24ae7f1b-daa6-4934-85ac-9bf82c78ee02]     2: 
+[24ae7f1b-daa6-4934-85ac-9bf82c78ee02]     3: Our blog has <%= Article.public_count %> articles and counting!
+[24ae7f1b-daa6-4934-85ac-9bf82c78ee02]     4: 
+[24ae7f1b-daa6-4934-85ac-9bf82c78ee02]     5: <ul>
+[24ae7f1b-daa6-4934-85ac-9bf82c78ee02]     6:   <% @articles.each do |article| %>
+[24ae7f1b-daa6-4934-85ac-9bf82c78ee02]   
+[24ae7f1b-daa6-4934-85ac-9bf82c78ee02] app/models/concerns/visible.rb:12:in `public_count'
+[24ae7f1b-daa6-4934-85ac-9bf82c78ee02] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:47.395608 #46908]  INFO -- : [6a2217e8-709a-4715-bacb-2cfc34bf3c7f] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:47 -0500
+I, [2022-09-08T11:56:47.396467 #46908]  INFO -- : [6a2217e8-709a-4715-bacb-2cfc34bf3c7f] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:47.400226 #46908]  INFO -- : [6a2217e8-709a-4715-bacb-2cfc34bf3c7f]   Rendered articles/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1256)
+I, [2022-09-08T11:56:47.400309 #46908]  INFO -- : [6a2217e8-709a-4715-bacb-2cfc34bf3c7f]   Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1285)
+I, [2022-09-08T11:56:47.400433 #46908]  INFO -- : [6a2217e8-709a-4715-bacb-2cfc34bf3c7f] Completed 500 Internal Server Error in 4ms (Allocations: 1483)
+F, [2022-09-08T11:56:47.401607 #46908] FATAL -- : [6a2217e8-709a-4715-bacb-2cfc34bf3c7f]   
+[6a2217e8-709a-4715-bacb-2cfc34bf3c7f] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[6a2217e8-709a-4715-bacb-2cfc34bf3c7f]     1: <h1>Articles</h1>
+[6a2217e8-709a-4715-bacb-2cfc34bf3c7f]     2: 
+[6a2217e8-709a-4715-bacb-2cfc34bf3c7f]     3: Our blog has <%= Article.public_count %> articles and counting!
+[6a2217e8-709a-4715-bacb-2cfc34bf3c7f]     4: 
+[6a2217e8-709a-4715-bacb-2cfc34bf3c7f]     5: <ul>
+[6a2217e8-709a-4715-bacb-2cfc34bf3c7f]     6:   <% @articles.each do |article| %>
+[6a2217e8-709a-4715-bacb-2cfc34bf3c7f]   
+[6a2217e8-709a-4715-bacb-2cfc34bf3c7f] app/models/concerns/visible.rb:12:in `public_count'
+[6a2217e8-709a-4715-bacb-2cfc34bf3c7f] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:47.557426 #46908]  INFO -- : [860950ab-7cbd-494a-b1f9-25501e266009] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:47 -0500
+I, [2022-09-08T11:56:47.558209 #46908]  INFO -- : [860950ab-7cbd-494a-b1f9-25501e266009] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:47.562332 #46908]  INFO -- : [860950ab-7cbd-494a-b1f9-25501e266009]   Rendered articles/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1255)
+I, [2022-09-08T11:56:47.562420 #46908]  INFO -- : [860950ab-7cbd-494a-b1f9-25501e266009]   Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1283)
+I, [2022-09-08T11:56:47.562542 #46908]  INFO -- : [860950ab-7cbd-494a-b1f9-25501e266009] Completed 500 Internal Server Error in 4ms (Allocations: 1471)
+F, [2022-09-08T11:56:47.563510 #46908] FATAL -- : [860950ab-7cbd-494a-b1f9-25501e266009]   
+[860950ab-7cbd-494a-b1f9-25501e266009] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[860950ab-7cbd-494a-b1f9-25501e266009]     1: <h1>Articles</h1>
+[860950ab-7cbd-494a-b1f9-25501e266009]     2: 
+[860950ab-7cbd-494a-b1f9-25501e266009]     3: Our blog has <%= Article.public_count %> articles and counting!
+[860950ab-7cbd-494a-b1f9-25501e266009]     4: 
+[860950ab-7cbd-494a-b1f9-25501e266009]     5: <ul>
+[860950ab-7cbd-494a-b1f9-25501e266009]     6:   <% @articles.each do |article| %>
+[860950ab-7cbd-494a-b1f9-25501e266009]   
+[860950ab-7cbd-494a-b1f9-25501e266009] app/models/concerns/visible.rb:12:in `public_count'
+[860950ab-7cbd-494a-b1f9-25501e266009] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:47.726279 #46908]  INFO -- : [b3265008-8959-4155-a2df-9d889781d4c6] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:47 -0500
+I, [2022-09-08T11:56:47.726851 #46908]  INFO -- : [b3265008-8959-4155-a2df-9d889781d4c6] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:47.730528 #46908]  INFO -- : [b3265008-8959-4155-a2df-9d889781d4c6]   Rendered articles/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1255)
+I, [2022-09-08T11:56:47.730663 #46908]  INFO -- : [b3265008-8959-4155-a2df-9d889781d4c6]   Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1283)
+I, [2022-09-08T11:56:47.730785 #46908]  INFO -- : [b3265008-8959-4155-a2df-9d889781d4c6] Completed 500 Internal Server Error in 4ms (Allocations: 1471)
+F, [2022-09-08T11:56:47.731589 #46908] FATAL -- : [b3265008-8959-4155-a2df-9d889781d4c6]   
+[b3265008-8959-4155-a2df-9d889781d4c6] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[b3265008-8959-4155-a2df-9d889781d4c6]     1: <h1>Articles</h1>
+[b3265008-8959-4155-a2df-9d889781d4c6]     2: 
+[b3265008-8959-4155-a2df-9d889781d4c6]     3: Our blog has <%= Article.public_count %> articles and counting!
+[b3265008-8959-4155-a2df-9d889781d4c6]     4: 
+[b3265008-8959-4155-a2df-9d889781d4c6]     5: <ul>
+[b3265008-8959-4155-a2df-9d889781d4c6]     6:   <% @articles.each do |article| %>
+[b3265008-8959-4155-a2df-9d889781d4c6]   
+[b3265008-8959-4155-a2df-9d889781d4c6] app/models/concerns/visible.rb:12:in `public_count'
+[b3265008-8959-4155-a2df-9d889781d4c6] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:47.888237 #46908]  INFO -- : [9c81afef-438b-4870-ac85-c0773f74cb2c] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:47 -0500
+I, [2022-09-08T11:56:47.889003 #46908]  INFO -- : [9c81afef-438b-4870-ac85-c0773f74cb2c] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:47.897968 #46908]  INFO -- : [9c81afef-438b-4870-ac85-c0773f74cb2c]   Rendered articles/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1255)
+I, [2022-09-08T11:56:47.898121 #46908]  INFO -- : [9c81afef-438b-4870-ac85-c0773f74cb2c]   Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 1283)
+I, [2022-09-08T11:56:47.898338 #46908]  INFO -- : [9c81afef-438b-4870-ac85-c0773f74cb2c] Completed 500 Internal Server Error in 9ms (Allocations: 1471)
+F, [2022-09-08T11:56:47.899899 #46908] FATAL -- : [9c81afef-438b-4870-ac85-c0773f74cb2c]   
+[9c81afef-438b-4870-ac85-c0773f74cb2c] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[9c81afef-438b-4870-ac85-c0773f74cb2c]     1: <h1>Articles</h1>
+[9c81afef-438b-4870-ac85-c0773f74cb2c]     2: 
+[9c81afef-438b-4870-ac85-c0773f74cb2c]     3: Our blog has <%= Article.public_count %> articles and counting!
+[9c81afef-438b-4870-ac85-c0773f74cb2c]     4: 
+[9c81afef-438b-4870-ac85-c0773f74cb2c]     5: <ul>
+[9c81afef-438b-4870-ac85-c0773f74cb2c]     6:   <% @articles.each do |article| %>
+[9c81afef-438b-4870-ac85-c0773f74cb2c]   
+[9c81afef-438b-4870-ac85-c0773f74cb2c] app/models/concerns/visible.rb:12:in `public_count'
+[9c81afef-438b-4870-ac85-c0773f74cb2c] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:48.049027 #46908]  INFO -- : [c5657494-e68a-46bc-9940-bf6bbf06ee83] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:48 -0500
+I, [2022-09-08T11:56:48.049537 #46908]  INFO -- : [c5657494-e68a-46bc-9940-bf6bbf06ee83] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:48.053500 #46908]  INFO -- : [c5657494-e68a-46bc-9940-bf6bbf06ee83]   Rendered articles/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1255)
+I, [2022-09-08T11:56:48.053654 #46908]  INFO -- : [c5657494-e68a-46bc-9940-bf6bbf06ee83]   Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1283)
+I, [2022-09-08T11:56:48.053860 #46908]  INFO -- : [c5657494-e68a-46bc-9940-bf6bbf06ee83] Completed 500 Internal Server Error in 4ms (Allocations: 1471)
+F, [2022-09-08T11:56:48.054810 #46908] FATAL -- : [c5657494-e68a-46bc-9940-bf6bbf06ee83]   
+[c5657494-e68a-46bc-9940-bf6bbf06ee83] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[c5657494-e68a-46bc-9940-bf6bbf06ee83]     1: <h1>Articles</h1>
+[c5657494-e68a-46bc-9940-bf6bbf06ee83]     2: 
+[c5657494-e68a-46bc-9940-bf6bbf06ee83]     3: Our blog has <%= Article.public_count %> articles and counting!
+[c5657494-e68a-46bc-9940-bf6bbf06ee83]     4: 
+[c5657494-e68a-46bc-9940-bf6bbf06ee83]     5: <ul>
+[c5657494-e68a-46bc-9940-bf6bbf06ee83]     6:   <% @articles.each do |article| %>
+[c5657494-e68a-46bc-9940-bf6bbf06ee83]   
+[c5657494-e68a-46bc-9940-bf6bbf06ee83] app/models/concerns/visible.rb:12:in `public_count'
+[c5657494-e68a-46bc-9940-bf6bbf06ee83] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:48.229241 #46908]  INFO -- : [1d2abf58-9d8a-4070-9b21-43d8c0043b4a] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:48 -0500
+I, [2022-09-08T11:56:48.229707 #46908]  INFO -- : [1d2abf58-9d8a-4070-9b21-43d8c0043b4a] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:48.232874 #46908]  INFO -- : [1d2abf58-9d8a-4070-9b21-43d8c0043b4a]   Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1255)
+I, [2022-09-08T11:56:48.232965 #46908]  INFO -- : [1d2abf58-9d8a-4070-9b21-43d8c0043b4a]   Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1283)
+I, [2022-09-08T11:56:48.233096 #46908]  INFO -- : [1d2abf58-9d8a-4070-9b21-43d8c0043b4a] Completed 500 Internal Server Error in 3ms (Allocations: 1471)
+F, [2022-09-08T11:56:48.233881 #46908] FATAL -- : [1d2abf58-9d8a-4070-9b21-43d8c0043b4a]   
+[1d2abf58-9d8a-4070-9b21-43d8c0043b4a] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[1d2abf58-9d8a-4070-9b21-43d8c0043b4a]     1: <h1>Articles</h1>
+[1d2abf58-9d8a-4070-9b21-43d8c0043b4a]     2: 
+[1d2abf58-9d8a-4070-9b21-43d8c0043b4a]     3: Our blog has <%= Article.public_count %> articles and counting!
+[1d2abf58-9d8a-4070-9b21-43d8c0043b4a]     4: 
+[1d2abf58-9d8a-4070-9b21-43d8c0043b4a]     5: <ul>
+[1d2abf58-9d8a-4070-9b21-43d8c0043b4a]     6:   <% @articles.each do |article| %>
+[1d2abf58-9d8a-4070-9b21-43d8c0043b4a]   
+[1d2abf58-9d8a-4070-9b21-43d8c0043b4a] app/models/concerns/visible.rb:12:in `public_count'
+[1d2abf58-9d8a-4070-9b21-43d8c0043b4a] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:48.374808 #46908]  INFO -- : [45460e9a-11b6-49d3-bf52-cdc3075c19c5] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:48 -0500
+I, [2022-09-08T11:56:48.375276 #46908]  INFO -- : [45460e9a-11b6-49d3-bf52-cdc3075c19c5] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:48.379237 #46908]  INFO -- : [45460e9a-11b6-49d3-bf52-cdc3075c19c5]   Rendered articles/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1255)
+I, [2022-09-08T11:56:48.379335 #46908]  INFO -- : [45460e9a-11b6-49d3-bf52-cdc3075c19c5]   Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1283)
+I, [2022-09-08T11:56:48.379445 #46908]  INFO -- : [45460e9a-11b6-49d3-bf52-cdc3075c19c5] Completed 500 Internal Server Error in 4ms (Allocations: 1471)
+F, [2022-09-08T11:56:48.380340 #46908] FATAL -- : [45460e9a-11b6-49d3-bf52-cdc3075c19c5]   
+[45460e9a-11b6-49d3-bf52-cdc3075c19c5] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[45460e9a-11b6-49d3-bf52-cdc3075c19c5]     1: <h1>Articles</h1>
+[45460e9a-11b6-49d3-bf52-cdc3075c19c5]     2: 
+[45460e9a-11b6-49d3-bf52-cdc3075c19c5]     3: Our blog has <%= Article.public_count %> articles and counting!
+[45460e9a-11b6-49d3-bf52-cdc3075c19c5]     4: 
+[45460e9a-11b6-49d3-bf52-cdc3075c19c5]     5: <ul>
+[45460e9a-11b6-49d3-bf52-cdc3075c19c5]     6:   <% @articles.each do |article| %>
+[45460e9a-11b6-49d3-bf52-cdc3075c19c5]   
+[45460e9a-11b6-49d3-bf52-cdc3075c19c5] app/models/concerns/visible.rb:12:in `public_count'
+[45460e9a-11b6-49d3-bf52-cdc3075c19c5] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:48.557502 #46908]  INFO -- : [335873e7-2ada-4d3a-b6a5-2ae8aed15a47] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:48 -0500
+I, [2022-09-08T11:56:48.558200 #46908]  INFO -- : [335873e7-2ada-4d3a-b6a5-2ae8aed15a47] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:48.562384 #46908]  INFO -- : [335873e7-2ada-4d3a-b6a5-2ae8aed15a47]   Rendered articles/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1255)
+I, [2022-09-08T11:56:48.562464 #46908]  INFO -- : [335873e7-2ada-4d3a-b6a5-2ae8aed15a47]   Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1283)
+I, [2022-09-08T11:56:48.562586 #46908]  INFO -- : [335873e7-2ada-4d3a-b6a5-2ae8aed15a47] Completed 500 Internal Server Error in 4ms (Allocations: 1471)
+F, [2022-09-08T11:56:48.563378 #46908] FATAL -- : [335873e7-2ada-4d3a-b6a5-2ae8aed15a47]   
+[335873e7-2ada-4d3a-b6a5-2ae8aed15a47] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[335873e7-2ada-4d3a-b6a5-2ae8aed15a47]     1: <h1>Articles</h1>
+[335873e7-2ada-4d3a-b6a5-2ae8aed15a47]     2: 
+[335873e7-2ada-4d3a-b6a5-2ae8aed15a47]     3: Our blog has <%= Article.public_count %> articles and counting!
+[335873e7-2ada-4d3a-b6a5-2ae8aed15a47]     4: 
+[335873e7-2ada-4d3a-b6a5-2ae8aed15a47]     5: <ul>
+[335873e7-2ada-4d3a-b6a5-2ae8aed15a47]     6:   <% @articles.each do |article| %>
+[335873e7-2ada-4d3a-b6a5-2ae8aed15a47]   
+[335873e7-2ada-4d3a-b6a5-2ae8aed15a47] app/models/concerns/visible.rb:12:in `public_count'
+[335873e7-2ada-4d3a-b6a5-2ae8aed15a47] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:48.724952 #46908]  INFO -- : [53184d56-d827-4c76-b8ea-ec8c5b831622] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:48 -0500
+I, [2022-09-08T11:56:48.725482 #46908]  INFO -- : [53184d56-d827-4c76-b8ea-ec8c5b831622] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:48.729527 #46908]  INFO -- : [53184d56-d827-4c76-b8ea-ec8c5b831622]   Rendered articles/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1255)
+I, [2022-09-08T11:56:48.729619 #46908]  INFO -- : [53184d56-d827-4c76-b8ea-ec8c5b831622]   Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1283)
+I, [2022-09-08T11:56:48.729732 #46908]  INFO -- : [53184d56-d827-4c76-b8ea-ec8c5b831622] Completed 500 Internal Server Error in 4ms (Allocations: 1471)
+F, [2022-09-08T11:56:48.730516 #46908] FATAL -- : [53184d56-d827-4c76-b8ea-ec8c5b831622]   
+[53184d56-d827-4c76-b8ea-ec8c5b831622] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[53184d56-d827-4c76-b8ea-ec8c5b831622]     1: <h1>Articles</h1>
+[53184d56-d827-4c76-b8ea-ec8c5b831622]     2: 
+[53184d56-d827-4c76-b8ea-ec8c5b831622]     3: Our blog has <%= Article.public_count %> articles and counting!
+[53184d56-d827-4c76-b8ea-ec8c5b831622]     4: 
+[53184d56-d827-4c76-b8ea-ec8c5b831622]     5: <ul>
+[53184d56-d827-4c76-b8ea-ec8c5b831622]     6:   <% @articles.each do |article| %>
+[53184d56-d827-4c76-b8ea-ec8c5b831622]   
+[53184d56-d827-4c76-b8ea-ec8c5b831622] app/models/concerns/visible.rb:12:in `public_count'
+[53184d56-d827-4c76-b8ea-ec8c5b831622] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:48.883687 #46908]  INFO -- : [b9524af3-2675-4ccf-b2e7-7128024cd4e0] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:48 -0500
+I, [2022-09-08T11:56:48.884241 #46908]  INFO -- : [b9524af3-2675-4ccf-b2e7-7128024cd4e0] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:48.888464 #46908]  INFO -- : [b9524af3-2675-4ccf-b2e7-7128024cd4e0]   Rendered articles/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1255)
+I, [2022-09-08T11:56:48.888561 #46908]  INFO -- : [b9524af3-2675-4ccf-b2e7-7128024cd4e0]   Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1283)
+I, [2022-09-08T11:56:48.888702 #46908]  INFO -- : [b9524af3-2675-4ccf-b2e7-7128024cd4e0] Completed 500 Internal Server Error in 4ms (Allocations: 1471)
+F, [2022-09-08T11:56:48.889461 #46908] FATAL -- : [b9524af3-2675-4ccf-b2e7-7128024cd4e0]   
+[b9524af3-2675-4ccf-b2e7-7128024cd4e0] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[b9524af3-2675-4ccf-b2e7-7128024cd4e0]     1: <h1>Articles</h1>
+[b9524af3-2675-4ccf-b2e7-7128024cd4e0]     2: 
+[b9524af3-2675-4ccf-b2e7-7128024cd4e0]     3: Our blog has <%= Article.public_count %> articles and counting!
+[b9524af3-2675-4ccf-b2e7-7128024cd4e0]     4: 
+[b9524af3-2675-4ccf-b2e7-7128024cd4e0]     5: <ul>
+[b9524af3-2675-4ccf-b2e7-7128024cd4e0]     6:   <% @articles.each do |article| %>
+[b9524af3-2675-4ccf-b2e7-7128024cd4e0]   
+[b9524af3-2675-4ccf-b2e7-7128024cd4e0] app/models/concerns/visible.rb:12:in `public_count'
+[b9524af3-2675-4ccf-b2e7-7128024cd4e0] app/views/articles/index.html.erb:3
+I, [2022-09-08T11:56:49.063011 #46908]  INFO -- : [d0580fef-9148-497a-93e7-3efe35b2dbdc] Started GET "/" for 127.0.0.1 at 2022-09-08 11:56:49 -0500
+I, [2022-09-08T11:56:49.063536 #46908]  INFO -- : [d0580fef-9148-497a-93e7-3efe35b2dbdc] Processing by ArticlesController#index as HTML
+I, [2022-09-08T11:56:49.066990 #46908]  INFO -- : [d0580fef-9148-497a-93e7-3efe35b2dbdc]   Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1255)
+I, [2022-09-08T11:56:49.067078 #46908]  INFO -- : [d0580fef-9148-497a-93e7-3efe35b2dbdc]   Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1283)
+I, [2022-09-08T11:56:49.067184 #46908]  INFO -- : [d0580fef-9148-497a-93e7-3efe35b2dbdc] Completed 500 Internal Server Error in 4ms (Allocations: 1471)
+F, [2022-09-08T11:56:49.068070 #46908] FATAL -- : [d0580fef-9148-497a-93e7-3efe35b2dbdc]   
+[d0580fef-9148-497a-93e7-3efe35b2dbdc] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "andrewredman" does not exist
+):
+[d0580fef-9148-497a-93e7-3efe35b2dbdc]     1: <h1>Articles</h1>
+[d0580fef-9148-497a-93e7-3efe35b2dbdc]     2: 
+[d0580fef-9148-497a-93e7-3efe35b2dbdc]     3: Our blog has <%= Article.public_count %> articles and counting!
+[d0580fef-9148-497a-93e7-3efe35b2dbdc]     4: 
+[d0580fef-9148-497a-93e7-3efe35b2dbdc]     5: <ul>
+[d0580fef-9148-497a-93e7-3efe35b2dbdc]     6:   <% @articles.each do |article| %>
+[d0580fef-9148-497a-93e7-3efe35b2dbdc]   
+[d0580fef-9148-497a-93e7-3efe35b2dbdc] app/models/concerns/visible.rb:12:in `public_count'
+[d0580fef-9148-497a-93e7-3efe35b2dbdc] app/views/articles/index.html.erb:3
+I, [2022-09-08T12:52:15.864380 #47967]  INFO -- : [49fc0be1-f811-4e9a-a741-24a674fc5271] Started GET "/" for 127.0.0.1 at 2022-09-08 12:52:15 -0500
+I, [2022-09-08T12:52:15.869395 #47967]  INFO -- : [49fc0be1-f811-4e9a-a741-24a674fc5271] Processing by ArticlesController#index as HTML
+I, [2022-09-08T12:52:16.902872 #47967]  INFO -- : [49fc0be1-f811-4e9a-a741-24a674fc5271]   Rendered articles/index.html.erb within layouts/application (Duration: 1024.4ms | Allocations: 4633)
+I, [2022-09-08T12:52:16.914298 #47967]  INFO -- : [49fc0be1-f811-4e9a-a741-24a674fc5271]   Rendered layout layouts/application.html.erb (Duration: 1035.8ms | Allocations: 7963)
+I, [2022-09-08T12:52:16.914555 #47967]  INFO -- : [49fc0be1-f811-4e9a-a741-24a674fc5271] Completed 200 OK in 1045ms (Views: 1038.7ms | ActiveRecord: 418.4ms | Allocations: 8896)
+I, [2022-09-08T13:39:17.649927 #48989]  INFO -- : [72728847-1ad2-47cb-ad5b-1bd334ab98c1] Started GET "/" for 127.0.0.1 at 2022-09-08 13:39:17 -0500
+I, [2022-09-08T13:39:17.659128 #48989]  INFO -- : [72728847-1ad2-47cb-ad5b-1bd334ab98c1] Processing by ArticlesController#index as HTML
+I, [2022-09-08T13:39:18.622096 #48989]  INFO -- : [72728847-1ad2-47cb-ad5b-1bd334ab98c1]   Rendered articles/index.html.erb within layouts/application (Duration: 954.7ms | Allocations: 4625)
+I, [2022-09-08T13:39:18.635775 #48989]  INFO -- : [72728847-1ad2-47cb-ad5b-1bd334ab98c1]   Rendered layout layouts/application.html.erb (Duration: 968.5ms | Allocations: 7943)
+I, [2022-09-08T13:39:18.636031 #48989]  INFO -- : [72728847-1ad2-47cb-ad5b-1bd334ab98c1] Completed 200 OK in 977ms (Views: 971.1ms | ActiveRecord: 419.9ms | Allocations: 8876)
+I, [2022-09-08T13:39:21.078908 #48989]  INFO -- : [3281d6b5-e921-42ef-97cb-421f30bf4c88] Started GET "/articles/new" for 127.0.0.1 at 2022-09-08 13:39:21 -0500
+I, [2022-09-08T13:39:21.079502 #48989]  INFO -- : [3281d6b5-e921-42ef-97cb-421f30bf4c88] Processing by ArticlesController#new as HTML
+I, [2022-09-08T13:39:21.182830 #48989]  INFO -- : [3281d6b5-e921-42ef-97cb-421f30bf4c88]   Rendered articles/new.html.erb within layouts/application (Duration: 16.1ms | Allocations: 2204)
+I, [2022-09-08T13:39:21.183602 #48989]  INFO -- : [3281d6b5-e921-42ef-97cb-421f30bf4c88]   Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 2750)
+I, [2022-09-08T13:39:21.183840 #48989]  INFO -- : [3281d6b5-e921-42ef-97cb-421f30bf4c88] Completed 200 OK in 104ms (Views: 17.3ms | ActiveRecord: 54.9ms | Allocations: 5581)
+I, [2022-09-08T13:39:33.775226 #48989]  INFO -- : [097e6f6c-a25b-446d-a74c-d25f6698ae58] Started POST "/articles" for 127.0.0.1 at 2022-09-08 13:39:33 -0500
+I, [2022-09-08T13:39:33.775812 #48989]  INFO -- : [097e6f6c-a25b-446d-a74c-d25f6698ae58] Processing by ArticlesController#create as TURBO_STREAM
+I, [2022-09-08T13:39:33.775900 #48989]  INFO -- : [097e6f6c-a25b-446d-a74c-d25f6698ae58]   Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"Production Article", "body"=>"This article should be in the production database", "status"=>"public"}, "commit"=>"Create Article"}
+I, [2022-09-08T13:39:33.880502 #48989]  INFO -- : [097e6f6c-a25b-446d-a74c-d25f6698ae58] Redirected to http://localhost:3000/articles/1
+I, [2022-09-08T13:39:33.880762 #48989]  INFO -- : [097e6f6c-a25b-446d-a74c-d25f6698ae58] Completed 302 Found in 105ms (ActiveRecord: 77.1ms | Allocations: 1050)
+I, [2022-09-08T13:39:33.895361 #48989]  INFO -- : [2ebb0d1f-b703-4180-b2e4-5cf7b59f019f] Started GET "/articles/1" for 127.0.0.1 at 2022-09-08 13:39:33 -0500
+I, [2022-09-08T13:39:33.896107 #48989]  INFO -- : [2ebb0d1f-b703-4180-b2e4-5cf7b59f019f] Processing by ArticlesController#show as TURBO_STREAM
+I, [2022-09-08T13:39:33.896184 #48989]  INFO -- : [2ebb0d1f-b703-4180-b2e4-5cf7b59f019f]   Parameters: {"id"=>"1"}
+I, [2022-09-08T13:39:34.136385 #48989]  INFO -- : [2ebb0d1f-b703-4180-b2e4-5cf7b59f019f]   Rendered articles/show.html.erb within layouts/application (Duration: 140.0ms | Allocations: 5124)
+I, [2022-09-08T13:39:34.137019 #48989]  INFO -- : [2ebb0d1f-b703-4180-b2e4-5cf7b59f019f]   Rendered layout layouts/application.html.erb (Duration: 140.7ms | Allocations: 5662)
+I, [2022-09-08T13:39:34.137210 #48989]  INFO -- : [2ebb0d1f-b703-4180-b2e4-5cf7b59f019f] Completed 200 OK in 241ms (Views: 64.2ms | ActiveRecord: 125.7ms | Allocations: 6232)
