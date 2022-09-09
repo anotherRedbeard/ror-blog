@@ -12,6 +12,10 @@
     <%= form.select :status, ['public','private','archived'], selected: 'public' %>
   </p>
   <p>
+    <%= form.label :important %>
+    <%= form.check_box :important, :class => 'form-control' %>
+  </p>
+  <p>
     <%= form.submit %>
   </p>
 <% end %>

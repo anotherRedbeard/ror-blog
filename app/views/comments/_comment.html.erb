@@ -1,8 +1,15 @@
 <% unless comment.archived? %>
-  <p>
-    <strong>(<%= comment.commenter %> @ <%= comment.updated_at %>):</strong>
-    <%= comment.body %>
-  </p>
+  <% if comment.important == true %>
+    <p class="important">
+      <strong>(<%= comment.commenter %> @ <%= comment.updated_at %>):</strong>
+      <%= comment.body %>
+    </p>
+  <% else %>
+    <p>
+      <strong>(<%= comment.commenter %> @ <%= comment.updated_at %>):</strong>
+      <%= comment.body %>
+    </p>
+  <% end %>
 
   <p>
     <%= link_to "Destroy Comment", [comment.article, comment], data:
