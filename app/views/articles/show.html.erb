@@ -1,4 +1,8 @@
-<h1><%= @article.title %></h1>
+<% if @article.important == true %>
+  <h1 class="important"><%= @article.title %></h1>
+<% else %>
+  <h1><%= @article.title %></h1>
+<% end %>
 
 <p><%= @article.body %></p>
 

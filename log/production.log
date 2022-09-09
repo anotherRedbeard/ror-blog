@@ -441,3 +441,4 @@ I, [2022-09-08T17:39:44.659168 #14398]  INFO -- : [de5c20a0-a061-432a-8801-6e807
 I, [2022-09-08T17:39:45.713634 #14398]  INFO -- : [de5c20a0-a061-432a-8801-6e807ffac291]   Rendered articles/index.html.erb within layouts/application (Duration: 1050.0ms | Allocations: 7236)
 I, [2022-09-08T17:39:45.720518 #14398]  INFO -- : [de5c20a0-a061-432a-8801-6e807ffac291]   Rendered layout layouts/application.html.erb (Duration: 1057.0ms | Allocations: 10470)
 I, [2022-09-08T17:39:45.720750 #14398]  INFO -- : [de5c20a0-a061-432a-8801-6e807ffac291] Completed 200 OK in 1061ms (Views: 1059.0ms | ActiveRecord: 446.2ms | Allocations: 11403)
+I, [2022-09-09T08:19:17.548358 #24614]  INFO -- : Migrating to AddImportantToArticles (20220909125522)

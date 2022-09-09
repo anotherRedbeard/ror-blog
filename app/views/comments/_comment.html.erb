@@ -1,11 +1,6 @@
 <% unless comment.archived? %>
   <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
-
-  <p>
-    <strong>Comment:</strong>
+    <strong>(<%= comment.commenter %> @ <%= comment.updated_at %>):</strong>
     <%= comment.body %>
   </p>
 
